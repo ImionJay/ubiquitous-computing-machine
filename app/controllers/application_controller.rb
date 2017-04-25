@@ -1,3 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  def index
+      @quote = Quote.order("Random()").first
+  end
 end
