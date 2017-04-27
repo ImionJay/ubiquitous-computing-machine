@@ -11,4 +11,5 @@
  * It is generally better to create a new file per style scope.
  * $ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
  *= require_tree .
-
+ *= require_self
+ */
